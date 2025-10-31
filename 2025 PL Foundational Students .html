@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> 2025 PL Foundational Students </title>
+  <style>
+    :root {
+      --bg: #0f172a;           /* slate-900 */
+      --card: #111827;         /* gray-900 */
+      --muted: #94a3b8;        /* slate-400 */
+      --text: #e5e7eb;         /* gray-200 */
+      --accent: #22c55e;       /* green-500 */
+      --accent-hover: #16a34a; /* green-600 */
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1000px 600px at 10% 0%, #0b1220 0%, #0f172a 60%, #0b1020 100%);
+      color: var(--text);
+      min-height: 100svh;
+      display: grid;
+      place-items: start center;
+      padding: 32px 16px 64px;
+    }
+
+    .wrap {
+      width: min(1200px, 100%);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(1.25rem, 0.6rem + 2vw, 2rem);
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .hint { color: var(--muted); font-size: 0.95rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns */
+      gap: 18px; /* spacing between cards */
+    }
+
+    /* Card */
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+      overflow: hidden;
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+    .card:hover { transform: translateY(-3px); border-color: rgba(148,163,184,0.35); box-shadow: 0 12px 28px rgba(0,0,0,0.45); }
+
+    .portrait {
+      width: 100%;
+      aspect-ratio: 3 / 4;     /* portrait ratio */
+      object-fit: cover;
+      display: block;
+      background: #0b1220;
+    }
+
+    .content {
+      padding: 14px 14px 18px;
+      display: grid;
+      gap: 10px;
+      place-items: center;
+      text-align: center;
+    }
+
+    .name { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.2px; }
+    .role { color: var(--muted); font-size: 0.9rem; }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      transition: background-color 160ms ease, border-color 160ms ease, transform 120ms ease;
+      background: var(--accent);
+      color: #08140c;
+    }
+    .btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+    /* Make it responsive: stack to 2 columns on medium screens, 1 column on small */
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1> 2025 PL Foundational Students </h1>
+    
+    </header>
+
+    <section class="grid">
+      <!-- Repeat this .card block 18 times to make a 3x6 grid -->
+      
+      <!-- 1 -->
+      <article class="card">
+       <img class="portrait" src="image/17.jpg" alt="17" />
+        <div class="content">
+          <div class="name">Yollam Chola</div>
+          <a class="btn" href="https://yollamchola.weebly.com" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <img class="portrait" src="image/9.jpg" alt="9" />
+        <div class="content">
+          <div class="name">Confidence Mkasanga</div>
+          <a class="btn" href="https://confidencemkasanga.weebly.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <img class="portrait" src="image/11.jpg" alt="11" />
+          <div class="name">Temwan Chimanga</div>
+        <div class="content">
+          <a class="btn" href="https://queentemwanichimanga.weebly.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+      <img class="portrait" src="image/8.jpg" alt="8" />
+        <div class="content">
+          <div class="name">Sibongile Banda</div>
+          <a class="btn" href="https://sibongilebanda.weebly.com" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <img class="portrait" src="image/6.jpg" alt="6" />
+        <div class="content">
+          <div class="name">Silvia Ngoma</div>
+          <a class="btn" href="https://silviangoma.weebly.com" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+      <img class="portrait" src="image/10.jpg" alt="10" />
+        <div class="content">
+          <div class="name">Thressa Phiri</div>
+          <a class="btn" href="https://thressaphiri.weebly.com/#" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+       <img class="portrait" src="image/5.jpg" alt="5" />
+        <div class="content">
+          <div class="name">John Kumwenda</div>
+          <a class="btn" href="https://johnkumwenda.weebly.com" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+       <img class="portrait" src="image/7.jpg" alt="7" />
+        <div class="content">
+          <div class="name">Eneless Ng'ona</div>
+          <a class="btn" href="https://enelessngona.weebly.com" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+ 
+      <!-- 9 -->
+      <article class="card">
+       <img class="portrait" src="image/4.jpg" alt="4" />
+        <div class="content">
+          <div class="name">Martin Banda</div>
+          <a class="btn" href="https://bandamartin.weebly.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+<img class="portrait" src="image/2.jpg" alt="2" />
+        <div class="content">
+          <div class="name">Mando Chamoto</div>
+          <a class="btn" href="https://mandochamoto.weebly.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card">
+        <img class="portrait" src="image/16.jpg" alt="16" />
+        <div class="content">
+          <div class="name">Gilbert Musonda</div>
+          <a class="btn" href="https://gilbertmusonda.weebly.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card">
+       <img class="portrait" src="image/15.jpg" alt="15" />
+        <div class="content">
+          <div class="name">Brandina Zulu</div>
+          <a class="btn" href="https://brandinazulu.weebly.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card">
+        <img class="portrait" src="image/14.jpg" alt="14" />
+        <div class="content">
+          <div class="name">Andrew Manda</div>
+          <a class="btn" href="https://andrewmanda.weebly.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card">
+        <img class="portrait" src="image/12.jpg" alt="12" />
+        <div class="content">
+          <div class="name">Mike Mwanza</div>
+          <a class="btn" href="https://mwanzamike.weebly.com" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card">
+       <img class="portrait" src="image/13.jpg" alt="13" />
+        <div class="content">
+          <div class="name">Martha Banda</div>
+          <a class="btn" href="https://www.weebly.com/editor/main.php#/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="card">
+      <img class="portrait" src="image/1.jpg" alt="1" />
+        <div class="content">
+          <div class="name">Benson Banda</div>
+          <a class="btn" href="#" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="card">
+      <img class="portrait" src="image/18.jpg" alt="18" />
+        <div class="content">
+          <div class="name">Moses Ngoma</div>
+          <a class="btn" href="#" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="card">
+       <img class="portrait" src="image/19.jpg" alt=" 19" />
+        <div class="content">
+          <div class="name">Kenan Mwanza</div>
+          <a class="btn" href="https://kenanmwanza.weebly.com" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </article>
+
+    </section>
+  </div>
+</body>
+</html>
